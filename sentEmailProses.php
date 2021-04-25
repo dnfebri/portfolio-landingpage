@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 //Import PHPMailer classes into the global namespace
 //These must be at the top of your script, not inside a function
@@ -62,24 +63,18 @@ $mail->Body    = $pesan;
 
 $send = $mail->send();
 
-// var_dump($_POST);
 ?>
 
 <?php if ($send) : ?>
   <div style="position: absolute; top: 0; bottom: 0; left: 0; right: 0; background-color: black;"></div>
+  <?php $_SESSION['pesan'] = "Email Berhasil dikirim"; ?>
   <script>
-    alert("Email Berhasil dikirim");
-    // Swal.fire(
-    //   'Email Berhasil dikirim',
-    //   '',
-    //   'success'
-    // )
-    document.location = 'index.html';
+    document.location = 'index.php';
   </script>
 <?php else : ?>
   <div style="position: absolute; top: 0; bottom: 0; left: 0; right: 0; background-color: black;"></div>
+  <?php $_SESSION['pesan'] = "Email Gagal dikirim"; ?>
   <script>
-    alert("Email Gagal dikirim.");
-    document.location = 'index.html';
+    document.location = 'index.php';
   </script>
 <?php endif; ?>

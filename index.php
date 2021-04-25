@@ -1,3 +1,21 @@
+<?php
+session_start();
+if (isset($_SESSION["pesan"])) :
+  ?>
+  <script>
+    window.onload = function() {
+      Swal.fire(
+        "<?= $_SESSION["pesan"]; ?>",
+        '',
+        'success'
+      )
+    }
+  </script>
+<?php
+  unset($_SESSION["pesan"]);
+endif;
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,8 +28,7 @@
   <link rel="stylesheet" href="assets/css/aristyle.css" />
 
   <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 
   <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
       integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous"> -->
@@ -41,10 +58,8 @@
             <a href="#" class="hide-m">Blog</a>
             <a href="#" class="hide-m">Portfolio</a> -->
       <a onclick="toggleDarkMode()">
-        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-lightbulb-fill"
-          viewBox="0 0 16 16">
-          <path
-            d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13h-5a.5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6zm3 8.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1-.5-.5z" />
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-lightbulb-fill" viewBox="0 0 16 16">
+          <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13h-5a.5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6zm3 8.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1-.5-.5z" />
         </svg>
       </a>
     </nav>
@@ -164,16 +179,13 @@
           <form action="sentEmailProses.php" method="post">
             <div class="mb-3">
               <label for="exampleFormControlInput1" class="form-label">Silakan masukan email anda</label>
-              <input type="email" class="form-control" id="exampleFormControlInput1" name="email"
-                placeholder="name@gmail.com" required>
+              <input type="email" class="form-control" id="exampleFormControlInput1" name="email" placeholder="name@gmail.com" required>
             </div>
             <div class="mb-3">
               <label for="exampleFormControlInput1" class="form-label">Keperluan ?</label>
-              <input type="text" class="form-control" id="exampleFormControlInput1" name="keperluan"
-                placeholder="Contoh : Edukasi" required>
+              <input type="text" class="form-control" id="exampleFormControlInput1" name="keperluan" placeholder="Contoh : Edukasi" required>
             </div>
-            <p>* Jika anda keberatan/tidak yakin dengan pengisisan form ini anda bisa kilk <a
-                href="https://forms.gle/fkzEdq1djBHyk1QVA" target="_blank">Link ini</a> </p>
+            <p>* Jika anda keberatan/tidak yakin dengan pengisisan form ini anda bisa kilk <a href="https://forms.gle/fkzEdq1djBHyk1QVA" target="_blank">Link ini</a> </p>
             <p>Sistem hanya perlu merekem data pengunjung yang akan mengakses Administrator Website ini!</p>
         </div>
         <div class="modal-footer">
@@ -186,9 +198,7 @@
   </div>
 
   <!-- Option 1: Bootstrap Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
-    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 
   <script src="js/sweetalert2.min.js"></script>
   <link rel="stylesheet" href="js/sweetalert2.min.css">
