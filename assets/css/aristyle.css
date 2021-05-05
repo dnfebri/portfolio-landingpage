@@ -18,7 +18,7 @@ html {
 .theme-light {
   --primary: #1e90ff;
   --bg: #CFCDFB;
-  --color: #3C6071;
+  --color: #000000;
   background: var(--bg);
   color: var(--color);
   background-color: #8BC6EC;
@@ -35,7 +35,7 @@ html {
 .theme-dark {
   --primary: #47D8E1;
   --bg: #4C7081;
-  --color: #ffffff;
+  --color: #000000;
   background: var(--bg);
   color: var(--color);
 }
@@ -663,17 +663,3 @@ section {
   margin: 0 5px;
 }
 /*# sourceMappingURL=aristyle.css.map */
-
-/* footer */
-.footer {
-  margin: 10px auto;
-  text-align: center;
-  text-decoration: underline;
-  font-weight: bold;
-}
-
-.footer a {
-  color: #000764;
-  text-transform: uppercase;
-  /* text-shadow: 2px 2px 5px rgb(0, 0, 0); */
-}

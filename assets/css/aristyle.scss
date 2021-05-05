@@ -15,7 +15,7 @@ html{
 .theme-light{
     --primary: #1e90ff;
     --bg: #CFCDFB;
-    --color: #3C6071;
+    --color: #000000;
     background: var(--bg);
     color: var(--color);
     @media screen and (min-width:769px){
@@ -31,7 +31,7 @@ background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
 .theme-dark {
     --primary: #47D8E1;
     --bg: #4C7081;
-    --color: #ffffff;
+    --color: #000000;
     background: var(--bg);
     color: var(--color);
     @media screen and (min-width:769px){
