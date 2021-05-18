@@ -85,27 +85,11 @@ endif;
           <img src="assets/img/projects/p_umsida_peduli.png" alt="Project">
         </a>
       </div>
-      <!-- <div class="list-item" data-tilt>
-              <div class="card">
-                  <a href="https://getbootstrap.com" class="btn btn-success" target="_blank">
-                    <img src="assets/img/projects/project-1.jpg" alt="Project">
-                  </a>
-              </div>
-          </div>
-          <div class="list-item" data-tilt>
-              <div class="card">
-                  <a href="https://getbootstrap.com" class="btn btn-success" target="_blank">
-                    <img src="assets/img/projects/project-1.jpg" alt="Project">
-                  </a>
-              </div>
-          </div>
-          <div class="list-item" data-tilt>
-              <div class="card">
-                  <a href="https://getbootstrap.com" class="btn btn-success" target="_blank">
-                    <img src="assets/img/projects/project-1.jpg" alt="Project">
-                  </a>
-              </div>
-          </div> -->
+      <div class="list-item" data-tilt>
+        <a href="https://dnfebri.000webhostapp.com/habib/" class="" target="_blank">
+          <img src="assets/img/projects/p-habib.png" alt="Project">
+        </a>
+      </div>
       <!-- <div class="list-item" data-tilt>
               <div class="services-img text-center py-4">
                   <img src="assets/img/projects/project-1.jpg" alt="services">

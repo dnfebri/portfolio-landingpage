@@ -36,6 +36,15 @@ $pesan = '<h3>Data di bawah ini adalah data yang bisa dikatakan rahasia bagi sis
           url : https://dnfebri.000webhostapp.com/donasi/admin<br>
           username : admin<br>
           password : admin<br>
+
+          <hr><br>
+
+          Habib : https://dnfebri.000webhostapp.com/habib/<br><br>
+
+          admin.<br>
+          url : https://dnfebri.000webhostapp.com/habib/admin<br>
+          username : admin<br>
+          password : kentungtok<br>
         ';
 
 //Instantiation and passing `true` enables exceptions
